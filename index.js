@@ -19,7 +19,7 @@ const openapiSpecification = swaggerJsdoc({
     apis: ['./routes/*.js']
 })
 
-connect("mongodb://localhost:27017/yourairdb1", { useNewUrlParser: true, useUnifiedTopology: true })
+connect("mongodb+srv://dbUser:Lw0wwRiysffGOams@cluster0.vxgoq.mongodb.net/yourairdb1?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         const app = express()
         
