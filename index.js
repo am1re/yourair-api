@@ -37,7 +37,7 @@ connect("mongodb+srv://dbUser:Lw0wwRiysffGOams@cluster0.vxgoq.mongodb.net/yourai
             res.status(500).send('Something broke!');
         });
 
-        app.listen(5000, () => {
+        app.listen(process.env.PORT || 5000, () => {
             console.log("Server has started!")
         })
     })
